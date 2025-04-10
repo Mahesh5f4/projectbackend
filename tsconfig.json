@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Modern JS features supported
+    "module": "CommonJS",                      // Required for Node.js runtime
+    "moduleResolution": "node",                // Makes module resolution behave like Node
+    "outDir": "./dist",                        // Compiled files go here
+    "rootDir": "./src",                        // Source files directory
+    "strict": true,                            // Enables strict type checking
+    "esModuleInterop": true,                   // Allows default imports from CommonJS
+    "forceConsistentCasingInFileNames": true,  // Avoid case sensitivity issues across OSes
+    "skipLibCheck": true,                      // Skip type checking for node_modules
+    "experimentalDecorators": true,            // Required for TypeORM decorators
+    "emitDecoratorMetadata": true,             // Required for TypeORM metadata reflection
+    "resolveJsonModule": true,                 // Allows importing `.json` files
+    "allowSyntheticDefaultImports": true       // Helps with import compatibility (e.g. express)
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
