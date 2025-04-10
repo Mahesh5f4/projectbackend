@@ -1,12 +1,16 @@
 {
   "name": "yoilday-backend",
   "version": "1.0.0",
+  "description": "Yoilday Backend - Node.js, TypeScript, Express, TypeORM, MySQL",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
+  "keywords": [],
+  "author": "Mahesh",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
